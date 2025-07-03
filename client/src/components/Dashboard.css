@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e5ff;
+    min-height: 106vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 42px; 
+    padding-top: 10px; 
+}
+.Container{
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+header{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 9px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+header .logo{
+   color: #3a505a;
+   font-weight: 60px;
+   text-decoration: none;
+   font-size: 1.4rem;
+}
+header ul{
+    display: flex;
+}
+.select{
+    margin: -6px 10px;
+    height: 28px;
+    border-radius: 25px;
+    padding: 2px 10px;
+    border: none;
+    background: none;
+    color: #3a505a;
+    font-weight: 60px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.select:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+header ul li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+.option{
+    width: 60px;
+    font-weight: 500;
+}
+header  ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #3a505a;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+header  ul li a:hover,
+header  ul li.active{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.content{
+    transform: translateX(-100px);
+    min-width: 300px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    padding-left: 90px;
+}
+.Container h2{
+    font-size: 1.6em;
+    color: #3a405a;
+    font-weight: 550;
+    margin-top: 3px;
+}
+.Container p{
+    font-size: 1em;
+    color: #3a405a;
+    font-weight: 450;
+    margin-top: 10px;
+}
+.content a{
+    display: inline-block;
+    padding: 5px 15px;
+    background: #fff;
+    color: #3a405a;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 450;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.content a:hover{
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.sci{
+    position: absolute;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+    padding: 5px;
+}
+.sci li i{
+    color: #3a505a;
+    font-size: 25px;
+}
+.sci li a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.sci li a i{
+    transform: scale(0.8);
+    transition: 0.7s;
+}
+.sci li:hover a i{
+    transform: scale(1.1) rotate(360deg);
+}
+.copyrightText{
+    position: absolute;
+    bottom: 8px;
+    left: 40px;
+    color: #3a405a;
+}
+.copyrightText a{
+    text-decoration: none;
+    color: #4578a1;
+}
+.copyrightText a:hover{
+    color: #3a405a;
+}
+
+@media (max-width: 1200px) {
+    .Container{
+        position: relative;
+        width: calc(100% - 20px);
+    }
+}
+@media (max-width: 710px) {
+    section{
+        padding: 0px 20px 60px;
+        width: 360px;
+        overflow: hidden;
+    }
+    .Container{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        top: 0px;
+        bottom: 10px;
+        width: 343px;
+    }
+    .Container .content{
+        transform: translateX(0px);
+        max-width: 100%;
+        padding-top: 15px;
+        padding-bottom: 0px;
+        padding-left: 25px;
+        margin-left: 50px;
+        margin-right: 60px;
+        margin-top: -18px;
+        margin-bottom: -10px;
+    }
+    header{
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        top: -55px;
+        padding: 10px;
+        right: 0;
+        left: 0;
+    }
+    header ul{
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    header ul li{
+        margin: 2px;
+        margin-bottom: 4px;
+    }
+    .content a{
+        font-size: 1em;
+        padding: 9px 10px;
+        margin-bottom: -10px;
+    }
+    .sci{
+        position: relative;
+        flex-direction: column;
+        left: 115px;
+        bottom: 105px;
+    }
+    .sci li a i{
+        font-size: 25px;
+    }
+    .copyrightText{
+        margin-bottom: -60px;
+    }
+    .chart{
+        margin-top: -20px;
+        margin-right: 90px;
+        margin-bottom: 60px;
+    }
+}
