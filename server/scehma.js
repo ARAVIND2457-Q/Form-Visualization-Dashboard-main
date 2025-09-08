@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // Patient Schema
 const PatientSchema = new mongoose.Schema({
-  patientId: {
+  patientId:{
     type: String,
     required: true,
     unique: true
@@ -133,3 +133,10 @@ const Doctor = mongoose.model('Doctor', DoctorSchema);
 const Appointment = mongoose.model('Appointment', AppointmentSchema);
 
 module.exports = { Patient, Doctor, Appointment };
+
+const patient  = mongoose.model('patient', patientSchema);
+const express = require('express');
+const router = express.Router();
+const { Patient, Doctor, Appointment } = require('../model/HealthcareSchema');
+
+// Example route to create a new patient
