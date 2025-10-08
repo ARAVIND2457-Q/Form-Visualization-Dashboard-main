@@ -4,7 +4,7 @@ import { registerUser } from '../services/api';
 const Signup = ({ setFlag }) => {
 
   const [user, setUser] = useState({
-    name: "", email: "", role: "", salery: "", password: ""
+    name: "", email: "", role: "", salary: "", password: "", age: ""
   });
 
 
@@ -22,7 +22,7 @@ const Signup = ({ setFlag }) => {
     Now you can Login`);
     setFlag(false);
 
-    setUser({ name: "", email: "", role: "", salery: "", password: "" });
+    setUser({ name: "", email: "", role: "", salary: "", password: "" , age:""});
 
   };
 

@@ -80,7 +80,7 @@ const GlassDashboard = ({ DashUser, setDashUser }) => {
           <li><a href='https://www.instagram.com/?login&hl=en-gb' target='blank'><i className="fa-brands fa-instagram"></i></a></li>
         </ul>
         <div className='copyrightText'>2025 © All rights are reserved. Designed & developed by
-          <a href='https://github.com/dashboard' target='blank'> Aravind Dumpoju S</a>
+          <a href='https://github.com/dashboard' target='blank'> Aravind Dumpoju </a>
         </div>
 
 

@@ -20,7 +20,7 @@ const Overlay = ( { setFlag }) => {
           <button className='ghost' id='signIn' onClick={() => setFlag(false)}>Log In</button>
         </div>
         <div className='overlay-panel overlay-right'>
-          <h1>Hello Friend</h1>
+          <h1>Hello </h1>
           <p>Enter your personal info to get Started</p>
           <button className='ghost' id='signUp' onClick={() => setFlag(true)}>Sign Up</button>
         </div> 
